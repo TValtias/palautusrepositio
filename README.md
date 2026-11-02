@@ -1,5 +1,6 @@
 # palautusrepositio
 
-##**Ohtu-palautukset**
+**Ohtu-palautukset**
 
-[x] [Ohtuvaraston repo](https://github.com/TValtias/ohtuvarasto)
+ [Ohtuvaraston repo](https://github.com/TValtias/ohtuvarasto)
+
