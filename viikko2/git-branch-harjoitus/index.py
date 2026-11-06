@@ -13,5 +13,3 @@ print(f"Lukujen {x} ja {y} erotus on {erotus(x, y)}")  # muutos bugikorjaus-bran
 
 logger("lopetetaan ohjelma")
 print("goodbye!")
-
-#muutos
