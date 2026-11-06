@@ -9,10 +9,10 @@ from player_stats import PlayerStats
 
 seasons = ["2018-19", "2019-20", "2020-21", "2021-22", "2022-23", "2023-24", "2024-25"]
 
-def create_table(season, nationality, players):
+def create_table(season, filter_name, players):
     """creates a table with player information"""
 
-    table = Table(title=f"Top scorers of {nationality} season {season}")
+    table = Table(title=f"Top scorers of {filter_name} season {season}")
 
     table.add_column("Name", style="medium_orchid", no_wrap=True)
     table.add_column("Team", style="deep_pink4")
@@ -32,22 +32,39 @@ def create_table(season, nationality, players):
     return table
 
 
-def main():
-    """Asks user for season and nationality, then fetches information"""
-
-    console = Console()
-    season= Prompt.ask("Select season", choices=seasons, default="2024-25")
-
-    url = f"https://studies.cs.helsinki.fi/nhlstats/{season}/players"
-    stats = PlayerStats(PlayerReader(url))
-
-    nationality = Prompt.ask(
-        "Select nationality",
-        choices=stats.nationalities(),
-        default="FIN"
+def select_players(stats):
+    """Asks the user for a nationality or team and returns matching players."""
+    filter_type = Prompt.ask(
+        "Show players by",
+        choices=["nationality", "team"],
+        default="nationality"
     )
 
-    players = stats.top_scorers_by_nationality(nationality)
-    console.print(create_table(season, nationality, players))
+    if filter_type == "nationality":
+        filter_name = Prompt.ask(
+            "Select nationality",
+            choices=stats.nationalities(),
+            default="FIN"
+        )
+        players = stats.top_scorers_by_nationality(filter_name)
+    else:
+        filter_name = Prompt.ask(
+            "Select team",
+            choices=stats.teams()
+        )
+        players = stats.top_scorers_by_team(filter_name)
+
+    return filter_name, players
+
+
+def main():
+    """Asks user for season and nationality, then fetches information."""
+    console = Console()
+    season = Prompt.ask("Select season", choices=seasons, default="2024-25")
+    url = f"https://studies.cs.helsinki.fi/nhlstats/{season}/players"
+    stats = PlayerStats(PlayerReader(url))
+    filter_name, players = select_players(stats)
+    console.print(create_table(season, filter_name, players))
+
 
 main()
