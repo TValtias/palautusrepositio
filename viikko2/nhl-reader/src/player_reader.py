@@ -3,7 +3,7 @@
 import requests
 from player import Player
 
-class PlayerReader:
+class PlayerReader: # pylint: disable=too-few-public-methods
     """Fetch player data from a URL and create Player objects."""
 
     def __init__(self, url):
@@ -13,7 +13,7 @@ class PlayerReader:
 
     def get_players(self):
         """returns a list of players"""
-        response = requests.get(self._url).json()
+        response = requests.get(self._url, timeout=20).json()
 
         players = []
 
