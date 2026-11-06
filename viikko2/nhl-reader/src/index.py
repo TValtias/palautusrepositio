@@ -1,3 +1,5 @@
+"""Main entry point for the application"""
+
 from rich.console import Console
 from rich.prompt import Prompt
 from rich.table import Table
@@ -8,6 +10,8 @@ from player_stats import PlayerStats
 seasons = ["2018-19", "2019-20", "2020-21", "2021-22", "2022-23", "2023-24", "2024-25"]
 
 def create_table(season, nationality, players):
+    """creates a table with player information"""
+
     table = Table(title=f"Top scorers of {nationality} season {season}")
 
     table.add_column("Name", style="medium_orchid", no_wrap=True)
@@ -29,6 +33,8 @@ def create_table(season, nationality, players):
 
 
 def main():
+    """Asks user for season and nationality, then fetches information"""
+
     console = Console()
     season= Prompt.ask("Select season", choices=seasons, default="2024-25")
 
