@@ -3,13 +3,14 @@
 class Player:
     """Represents an NHL player with their statistics for a given season."""
 
-    def __init__(self, dict):
-        self.name = dict['name']
-        self.nationality = dict['nationality']
-        self.goals = dict['goals']
-        self.assists = dict['assists']
-        self.team = dict['team']
-        self.games = dict['games']
+    def __init__(self, stats_dict):
+        """Initializes a Player instance with data from a dictionary."""
+        self.name = stats_dict['name']
+        self.nationality = stats_dict['nationality']
+        self.goals = stats_dict['goals']
+        self.assists = stats_dict['assists']
+        self.team = stats_dict['team']
+        self.games = stats_dict['games']
 
     @property
     def points(self):
