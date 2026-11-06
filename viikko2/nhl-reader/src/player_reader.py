@@ -1,7 +1,11 @@
+"""This module includes PlayerReader class"""
+
 import requests
 from player import Player
 
 class PlayerReader:
+    """returns a list of players"""
+
     def __init__(self, url):
         self._url = url
 
