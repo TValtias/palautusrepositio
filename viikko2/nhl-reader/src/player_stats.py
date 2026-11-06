@@ -23,3 +23,4 @@ class PlayerStats:
             key=lambda player: player.goals + player.assists,
             reverse=True
         )
+    
