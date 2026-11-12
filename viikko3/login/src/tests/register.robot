@@ -13,6 +13,48 @@ Register With Valid Username And Password
     Click  button >> text=Register
     Register Should Succeed
 
+Register With Password Containing Numbers
+    Set Username  numero
+    Set Password  kalle123
+    Set Password Confirmation  kalle123
+    Click  button >> text=Register
+    Register Should Succeed
+
+Register With Password Containing Special Characters
+    Set Username  erikois
+    Set Password  kalle#abc
+    Set Password Confirmation  kalle#abc
+    Click  button >> text=Register
+    Register Should Succeed
+
+Register With Matching Password Confirmation
+    Set Username  sama
+    Set Password  kalle123
+    Set Password Confirmation  kalle123
+    Click  button >> text=Register
+    Register Should Succeed
+
+Register With Nonmatching Password Confirmation
+    Set Username  eri
+    Set Password  kalle123
+    Set Password Confirmation  kalle321
+    Click  button >> text=Register
+    Register Should Fail With Message  message=Passwords do not match
+
+Register With Password Containing Only Lowercase Letters
+    Set Username  pelkkalower
+    Set Password  kallekalle
+    Set Password Confirmation  kallekalle
+    Click  button >> text=Register
+    Register Should Fail With Message  message=Invalid username or password
+
+Register With Password Containing Only Uppercase And Lowercase Letters
+    Set Username  upperlower
+    Set Password  KalleKalle
+    Set Password Confirmation  KalleKalle
+    Click  button >> text=Register
+    Register Should Fail With Message  message=Invalid username or password
+
 
 Register With Too Short Username And Valid Password
     Set Username  ab
