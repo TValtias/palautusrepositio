@@ -38,3 +38,6 @@ Go To Starting Page
 
 Go To Register Page
     Go To  ${REGISTER_URL}
+
+Welcome Page Should Be Open
+    Get Title  ==  Welcome to Ohtu Application!
