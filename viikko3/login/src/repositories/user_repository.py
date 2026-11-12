@@ -26,9 +26,7 @@ class UserRepository:
         existing_user = self.find_by_username(user.username)
 
         if existing_user:
-            raise Exception(
-                f"User with username {user.username} already exists"
-            )
+            raise Exception("Username in use")
 
         users.append(user)
 

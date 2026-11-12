@@ -37,7 +37,7 @@ Register With Username That Is Already In Use
 
 *** Keywords ***
 Register Should Succeed
-    Main Page Should Be Open
+    Welcome Page Should Be Open
 
 Register Should Fail With Message
     [Arguments]  ${message}
