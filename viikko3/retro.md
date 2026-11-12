@@ -1,0 +1,8 @@
+Retrospektiivitekniikat
+
+Retrospektiivin tarkoituksena on olla tilaisuus, jossa tiimillä on mahdollisuus käydä läpi omia työskentelytapojaan, mikä onnistui, missä olisi hyvä parantaa. Pääpointtina on tarkastella mennyttä sprinttiä ja sitä, mitä tiimi kokee, että olisi voinut tehdä tosin, jotta seuraava sprintti sujuisi vielä paremmin. Retrospektiivin tarkoitus on toimia koko tiimiä avustavana, lyhyenä kokouksena, eikä tarkoituksena ole etsiä syyllisiä mahdollisiin virheisiin.
+
+Retrospektiivin pitämiseen on monia eri tekniikoita, kuten Start, Stop, Continue, More of, Less of Wheen, joista jokaiseen kohtaan listataan ryhmän toimesta asioita. Toinen tapa on Glad, Sad, Mad, joka toimii samalla tavalla kuin edellinen, eli ryhmä täyttää jokaiseen kohtaan sprintin aikana tulleita asioita. Kolmantena on Kierroksiin perustuva malli, jossa jokainen miettii ensin itse positiivisen asian, sitten parannettavan asian ja sitten lopetettavan asian. Jokaisen kohdalla asiasta keskustellaan ja mietitään yhdessä tiimin kanssa ja asiat kirjataan ylös. Lopuksi tiimi valitsee kolme kohtaa, joissa päätetään parantaa. Näiden valittujen parannuskohteiden seuranta tapahtuu seuraavan retrospektiivin alussa, jolloin voidaan nähdä, miten paljon tiimi onnistui parantamaan toimintatapojaan tällä sprintillä.
+
+Retrospektiivi voidaan pitää monella eri tavalla näiden yllä painittujen lisäksi. Valitsi tiimi minkä tahansa tavan, tärkeintä on tarkastella mennyttä sprinttiä ympäristössä, joka ei tuomitse ja keskiössä ovat ongelmat ja rakentavat ehdotukset sen sijaan, että syyllistetään tai etsitään syyllisiä mahdollisiin epäonnistumisiin. Näin on helpompi keskittyä asioiden korjaamiseen.
+
