@@ -26,3 +26,22 @@ uv run robot src/tests
 Käyttäjätunnuksen ja salasanan rekisteröinti- ja kirjautumisvalidointi
 tapahtuu tiedostossa `src/services/user_service.py`. Reitit tiedostossa
 `src/app.py` kutsuvat palvelua ja näyttävät sen virheilmoitukset.
+
+## Viikko 4: tdd-ostoskori
+
+Ohjeet koskevat hakemistoa `viikko4/tdd-ostoskori`. Aja testit komennolla:
+
+```bash
+uv run pytest
+```
+
+Yksittäisen testin voi ajaa esimerkiksi:
+
+```bash
+uv run pytest src/tests/ostoskori_test.py::TestOstoskori::test_ostoskorin_hinta_ja_tavaroiden_maara_alussa
+```
+
+- Älä muuta `ostos.py`- tai `tuote.py`-tiedostoja.
+- Älä muokkaa testejä, ellei sitä erikseen pyydetä.
+- Toteuta aina ehdottomasti pienin muutos, jolla testit menevät läpi.
+- Pidä tämä ohjetiedosto tiiviinä.
