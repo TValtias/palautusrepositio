@@ -9,3 +9,4 @@ Yrittikö agentti missään vaiheessa “huijata”, esim. kovakoodaamalla testi
 
 Kumpi työnjako, A vai B, tuntui paremmalta, ja miksi?
 - Pidin enemmän A:sta. Tuntui helpommalta tehdä testit ja sitten tarkistaa miten agentti ratkaisi toiminnallisuuden. Koodin lukeminen (kun copilot tekee kaiken) on välillä minulle hieman raskasta, sillä en ymmärrä aivan kaikkea mitä koodissa tapahtuu, jonka takia joudun googlettamaan paljon ja katsoa mitä jokainen asia tarkoittaa.
+-----
