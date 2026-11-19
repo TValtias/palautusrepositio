@@ -1,4 +1,4 @@
-
+##Raportti
 ----
 Päätyikö agentti hyvään toteutukseen ja laadukkaisiin testeihin?
 - Agentti teki hieman oikoen, eli sen sijaan, että tarkistaisi suoraan 1+1=2, se teki ratkaisun, joka tarkisti suoraan luku + luku = luku. Tämä ei mielestäni ollut huono asia, mutta ehkä hieman sivuutti tehtävän pointtia. Se teki koodista kuitenkin paljon fiksumman.
